@@ -1,7 +1,7 @@
 # Workshop and homework exercises from C# workshops
 
 ## Workshop #1
-### Homework:
+### Homework exercises
 
 2\. Даны два числа. Показать большее и меньшее число
 
@@ -12,7 +12,7 @@
 8\. Показать четные числа от 1 до N
 
 ## Workshop #2
-### Workshop exercises: 
+### Workshop exercises:
 
 9\.
 
@@ -22,7 +22,7 @@
 
 15\.
 
-### Homework:
+### Homework exercises
 
 10\. Показать вторую цифру трёхзначного числа
 
@@ -33,7 +33,7 @@
 16\. Дано число обозначающее день недели. Выяснить является номер дня недели выходным
 
 ## Workshop #3
-### Homework:
+### Homework exercises
 
 18\. Проверить истинность утверждения ¬(X ⋁ Y) = ¬X ⋀ ¬Y
 
