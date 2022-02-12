@@ -2,7 +2,7 @@
 
 Console.WriteLine("Shows a coordinate range depends of a quarter.");
 
-int qrtr = Inpt("Enter a quarter number: "); 
+int qrtr = Inpt("Enter a quarter number from 1 to 4: ");
 QrtrShwr(qrtr);
 
 
@@ -21,30 +21,30 @@ int Inpt(string msg)                    // Метод ввода целого ч
         }
         else
         {
-            Console.WriteLine($"Enter avalid number of a quarter. '{inpt}' is not a number.");
+            Console.WriteLine($"Enter a valid number of a quarter. '{inpt}' is not a number.");
         }
-    } 
+    }
     return rslt;
-}   
+}
 
 
 void QrtrShwr(int qrtr)
 {
     if (qrtr == 1)
     {
-        Console.WriteLine("You've entered quarter I. Coordinate range x > 0, y > 0");
+        Console.WriteLine("You've entered quarter is I. Coordinate range x > 0, y > 0");
     }
     else if (qrtr == 2)
     {
-        Console.WriteLine("You've entered quarter II. Coordinate range x < 0, y > 0");
+        Console.WriteLine("You've entered quarter is II. Coordinate range x < 0, y > 0");
     }
     else if (qrtr == 3)
     {
-        Console.WriteLine("The entered quarter III. Coordinate range x < 0, y < 0");
+        Console.WriteLine("The entered quarter is III. Coordinate range x < 0, y < 0");
     }
     else if (qrtr == 4)
     {
-        Console.WriteLine("The entered quarter IV. Coordinate range x > 0, y < 0");
+        Console.WriteLine("The entered quarter is IV. Coordinate range x > 0, y < 0");
     }
     else
     {
