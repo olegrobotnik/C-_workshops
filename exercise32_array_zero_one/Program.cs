@@ -6,7 +6,7 @@ int[,] matrix = new int[4, 2];
 FillArry(matrix);
 PrntArry(matrix);
 
-void FillArry(int[,] matrix)
+void FillArry(int[,] matrix)        // Метод заполнения двумерного массива случайными числами
 {
     for (int m = 0; m < matrix.GetLength(0); m += 1)
     {
@@ -17,7 +17,7 @@ void FillArry(int[,] matrix)
     }
 }
 
-void PrntArry(int[,] matrix)
+void PrntArry(int[,] matrix)         // Метод печати двумерного массива
 {
     for (int m = 0; m < matrix.GetLength(0); m++)
     {
@@ -28,3 +28,30 @@ void PrntArry(int[,] matrix)
         Console.WriteLine();
     }
 }
+
+
+// Console.Clear();         // Ввод и вывод одномерного массива в терминале
+// int[] arry = new int[10];
+// FillArry(arry);
+// PrntArry(arry);
+
+// void FillArry(int[] arry) // Метод заполнения одномерного массива случайными числами
+// {
+//     //int length = arry.Length;
+//     int index = 0;
+//     while (index < arry.Length)
+//     {
+//         arry[index] = new Random().Next(0,10);
+//         index++;
+//     }
+// }
+
+// void PrntArry(int[] arry)  // Метод печати одномерного массива
+// {
+//     int i = 0;
+    
+//     foreach (int index in arry)
+//     {
+//         Console.Write("{0} ", index);
+//     }
+// }
