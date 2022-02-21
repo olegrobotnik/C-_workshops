@@ -26,7 +26,7 @@ Console.ResetColor();
 Console.Write(".");
 
 
-double InptA(string msg)                    // Метод ввода числа в терминале с проверкой введённых символов
+double InptA(string msg)                    // Метод ввода вещественного числа в терминале с проверкой введённых символов
 {
     Console.Write(msg);
     string str = Console.ReadLine();
@@ -44,7 +44,7 @@ double InptA(string msg)                    // Метод ввода числа 
 }
 
 
-int InptB(string msg)                    // Метод ввода числа в терминале с проверкой введённых символов
+int InptB(string msg)                    // Метод ввода натурального числа в терминале с проверкой введённых символов
 {
     Console.Write(msg);
     int rslt;
