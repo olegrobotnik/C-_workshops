@@ -8,8 +8,8 @@ for (int i = 0; i < arry.Length; i++)
 {
     arry[i] = rndmNmbr.NextDouble();
     if (max >= arry[i])
-    {    
-    min = arry[i];
+    {
+        min = arry[i];
     }
     else
     {
@@ -20,10 +20,10 @@ for (int i = 0; i < arry.Length; i++)
 for (int j = 0; j < arry.Length; j++)
 {
     if (min > arry[j])
-        min = arry[j];
-
+    {
+    min = arry[j];
+    }
 }
-
 
 double diff = max - min;
 Console.WriteLine();
