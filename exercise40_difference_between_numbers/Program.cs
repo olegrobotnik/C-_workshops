@@ -21,7 +21,7 @@ for (int j = 0; j < arry.Length; j++)
 {
     if (min > arry[j])
     {
-    min = arry[j];
+        min = arry[j];
     }
 }
 
