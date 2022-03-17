@@ -1,7 +1,7 @@
 ﻿// В двумерном массиве n×k заменить четные элементы на противоположные.
 
 Console.Clear();
-Random rndm = new Random(); 
+Random rndm = new Random();
 int n = rndm.Next(2, 10);
 int k = rndm.Next(2, 10);
 int[,] arry = new int[n, k];
@@ -11,6 +11,7 @@ PrntArry(arry);
 Console.WriteLine();
 EvenToNgtive(arry);
 PrntArry(arry);
+Console.ReadLine();
 
 void FillArry(int[,] arry)
 {
@@ -29,7 +30,7 @@ void PrntArry(int[,] arry)
     {
         for (int column = 0; column < arry.GetLength(1); column++)
         {
-            Console.Write($"{arry[row, column]} "); 
+            Console.Write($"{arry[row, column]} ");
         }
         Console.WriteLine();
     }
