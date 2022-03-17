@@ -69,14 +69,7 @@ void SqrElmnt(int[,] arry)
 
 void PrntColor(int i, int j)
 {
-    Console.ForegroundColor = ConsoleColor.DarkMagenta;
-    Console.Write($"{arry[i, j]} ");
-    Console.ResetColor();
-}
-
-void PrntDarkGreen(int i, int j)
-{
-    Console.ForegroundColor = ConsoleColor.DarkGreen;
+    Console.ForegroundColor = ConsoleColor.Magenta;
     Console.Write($"{arry[i, j]} ");
     Console.ResetColor();
 }
