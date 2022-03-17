@@ -38,9 +38,6 @@ void PrntArry(int[,] arry)
         {
             if ((i % 2 == 0) && (j % 2 == 0))
             {
-                // Console.ForegroundColor = color;
-                // Console.Write($"{arry[i, j]} ");
-                // Console.ResetColor();
                 PrntColor(i, j);
             }
             else
@@ -48,7 +45,6 @@ void PrntArry(int[,] arry)
                 Console.Write($"{arry[i, j]} ");
             }
         }
-
         Console.WriteLine();
     }
 }
@@ -61,7 +57,7 @@ void SqrElmnt(int[,] arry)
         {
             if ((i % 2 == 0) && (j % 2 == 0))
             {
-                arry[i, j] = arry[i, j] * arry[i, j];
+                arry[i, j] = (int)Math.Pow(arry[i, j], 2);
             }
         }
     }
