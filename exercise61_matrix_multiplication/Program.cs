@@ -10,11 +10,14 @@ int[,] mtrxAB = new int[n, n];
 Random rndm = new Random();
 
 Console.WriteLine();
+
+FillArry(mtrxA);
+FillArry(mtrxB);
 Console.WriteLine("Matrix A");
-FillPrntArry(mtrxA);
+PrntArry(mtrxA);
 Console.WriteLine();
 Console.WriteLine("Matrix B");
-FillPrntArry(mtrxB);
+PrntArry(mtrxB);
 Console.WriteLine();
 Console.WriteLine("Matrix product");
 PrntArry(MtrxMltply(mtrxA, mtrxB, mtrxAB));
@@ -33,16 +36,14 @@ int ChkNmbr(string txt)
     return nmbr;
 }
 
-void FillPrntArry(int[,] arry)
+void FillArry(int[,] arry)
 {
     for (int row = 0; row < arry.GetLength(0); row++)
     {
         for (int column = 0; column < arry.GetLength(1); column++)
         {
             arry[row, column] = rndm.Next(0, 10);
-            Console.Write($"{arry[row, column]} ");
         }
-        Console.WriteLine();
     }
 }
 
