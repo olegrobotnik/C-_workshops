@@ -4,7 +4,7 @@
 
 Console.Clear();
 
-int M = GetNumber("Enter the inintial number: "), N = GetNumber("Enter the final number: ");
+int M = GetNmbr("Enter the inintial number: "), N = GetNmbr("Enter the final number: ");
 if (M > N)
 {
     Console.WriteLine();
@@ -13,24 +13,24 @@ if (M > N)
 else
 {
     Console.WriteLine();
-    PrintReqursive(M, N);
+    OutptRec(M, N);
 }
 
 Console.ReadKey();
 
-int GetNumber(string text)
+int GetNmbr(string txt)
 {
-    Console.Write(text);
-    string input = Console.ReadLine();
-    int.TryParse(input, out int number);
-    return number;
+    Console.Write(txt);
+    string inpt = Console.ReadLine();
+    int.TryParse(inpt, out int nmbr);
+    return nmbr;
 }
 
-void PrintReqursive(int M, int N)
+void OutptRec(int M, int N)
 {
     if (M <= N)
     {
         Console.Write(M + " | ");
-        PrintReqursive(M + 1, N);
+        OutptRec(M + 1, N);
     }
 }
