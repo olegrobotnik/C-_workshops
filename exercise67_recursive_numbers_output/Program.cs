@@ -30,7 +30,7 @@ void PrintReqursive(int M, int N)
 {
     if (M <= N)
     {
-        Console.Write(M + "|");
+        Console.Write(M + " | ");
         PrintReqursive(M + 1, N);
     }
 }
